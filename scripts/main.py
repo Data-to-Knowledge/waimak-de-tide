@@ -7,8 +7,8 @@ Created on Wed Apr 25 07:49:41 2018
 This module runs through the sequence of other python modules for updating the Hydro DB
 """
 
-print('Export Hydrotel data')
-import hydrotel_tsdata
+print('Process Hydrotel data')
+import waimak_detide
 
 
 
