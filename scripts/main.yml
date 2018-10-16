@@ -1,4 +1,4 @@
-name: HydrotelExport
+name: WaimakTide
 channels:
 - conda-forge
 - mullenkamp
@@ -6,3 +6,4 @@ channels:
 dependencies:
 - python=3.6
 - pyhydrotel
+- detidelevel

@@ -1,6 +1,0 @@
-$envList = conda env list
-$envList
-$result = $envList| where-object { $_ -like "HydrotelExport *" }
-$result
-if($result) { conda env remove -y -n "HydrotelExport" }
-conda env create -f D:\Executables\PythonScripts\HydrotelExport\main.yml
