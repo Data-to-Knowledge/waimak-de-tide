@@ -1,0 +1,247 @@
+crc,take_type,allo_block,feav,from_month,to_month,use_type,from_date,max_rate_crc,to_date,in_gw_allo,daily_vol,crc_status
+CRC000624.1,Take Groundwater,A,655200.0,7,6,other,2010-05-31,20.0,2034-11-02,True,1728.0,Issued - Active
+CRC000744.1,Take Groundwater,A,1854221.0,7,6,irrigation,2008-05-29,140.0,2034-12-09,True,11582.0,Issued - Active
+CRC000754.1,Take Surface Water,A,332439.0,7,6,irrigation,2008-06-23,72.0,2034-11-23,False,6220.8,Issued - Active
+CRC001890.1,Take Groundwater,A,968000.0,7,6,irrigation,2011-10-20,128.0,2035-01-31,True,11059.2,Issued - Active
+CRC010795,Take Groundwater,A,36004.0,7,6,irrigation,2001-05-07,10.7,2035-08-31,True,213.8,Issued - Active
+CRC011389,Take Groundwater,A,89180.0,7,6,stockwater,2001-02-09,6.8,2036-02-08,True,245.0,Issued - Active
+CRC011795,Take Groundwater,A,3450.0,7,6,irrigation,2001-04-04,1.5,2036-04-03,True,21.5,Issued - Active
+CRC011877,Take Groundwater,A,65520.0,7,6,industrial,2001-07-20,8.58,2035-01-31,True,741.31,Issued - Active
+CRC011891.2,Take Groundwater,A,254272.0,7,6,irrigation,2008-07-04,20.0,2039-06-01,True,1728.0,Issued - Active
+CRC012006,Take Surface Water,A,4782240.0,7,6,stockwater,2002-12-10,100.0,2037-12-10,False,8640.0,Issued - Active
+CRC012006,Take Surface Water,AA,15953760.0,7,6,water_supply,2002-12-10,100.0,2037-12-10,False,8640.0,Issued - Active
+CRC012006,Take Surface Water,B,11696000.0,7,6,irrigation,2002-12-10,100.0,2037-12-10,False,8640.0,Issued - Active
+CRC012237.4,Take Surface Water,A,2232210.0,7,6,irrigation,2015-02-26,280.0,2036-06-14,False,24192.0,Issued - Active
+CRC012361.1,Take Groundwater,A,141596.0,7,6,stockwater,2002-05-13,4.5,2036-10-19,True,388.8,Issued - Active
+CRC020199.1,Take Surface Water,A,1945516.0,7,6,irrigation,2008-07-21,150.0,2037-03-20,False,12960.0,Issued - Active
+CRC020551.1,Take Groundwater,A,249441.0,7,6,irrigation,2007-06-28,19.0,2035-08-31,True,1573.2,Issued - Active
+CRC020696.2,Take Groundwater,A,402786.0,7,6,irrigation,2005-07-22,35.0,2035-01-31,True,3024.0,Issued - Active
+CRC021291.3,Take Groundwater,A,418576.0,7,6,irrigation,2010-07-12,35.0,2037-02-22,True,3024.0,Issued - Active
+CRC030112.1,Take Groundwater,A,428000.0,7,6,irrigation,2006-12-04,30.3,2037-10-02,True,2617.92,Issued - Active
+CRC030246.2,Take Surface Water,A,669961.0,7,6,irrigation,2008-07-01,50.0,2037-12-21,False,4320.0,Issued - Active
+CRC030249.1,Take Groundwater,A,299428.0,7,6,irrigation,2005-07-06,25.0,2037-11-21,True,2160.0,Issued - Active
+CRC030501.1,Take Groundwater,A,114889.0,7,6,irrigation,2003-09-24,20.0,2035-08-31,True,663.0,Issued - Active
+CRC032149,Take Groundwater,A,525000.0,7,6,water_supply,2005-03-24,70.0,2040-03-24,True,3500.0,Issued - Active
+CRC040267.1,Take Groundwater,A,173628.0,7,6,industrial,2008-07-09,10.0,2038-10-13,True,477.0,Issued - Active
+CRC040372,Take Groundwater,A,259647.0,7,6,irrigation,2003-12-01,23.0,2038-11-27,True,1987.2,Issued - Active
+CRC040840.1,Take Groundwater,A,78932.0,7,6,irrigation,2005-02-01,6.9,2039-01-16,True,596.16,Issued - Active
+CRC041190,Take Groundwater,A,255897.0,7,6,irrigation,2004-02-13,23.0,2039-02-12,True,1987.2,Issued - Active
+CRC041358.3,Take Groundwater,A,586310.0,7,6,irrigation,2012-01-13,69.99,2039-03-05,True,6065.01,Terminated - Replaced
+CRC042826,Take Groundwater,A,163620.0,7,6,other,2004-09-29,30.0,2039-09-29,True,1091.0,Issued - Active
+CRC050353,Take Groundwater,A,121433.0,7,6,irrigation,2005-03-07,10.0,2040-03-04,True,864.0,Issued - Active
+CRC051543.2,Take Groundwater,A,583200.0,7,6,irrigation,2010-11-03,75.0,2040-02-23,True,6480.0,Issued - Active
+CRC051657,Take Groundwater,A,29200.0,7,6,industrial,2005-01-28,5.0,2040-01-27,True,80.0,Issued - Active
+CRC052097.3,Take Groundwater,A,924480.0,7,6,irrigation,2012-12-14,100.0,2040-05-03,True,8640.0,Issued - Active
+CRC052598,Take Groundwater,A,479084.0,7,6,irrigation,2005-04-14,80.0,2040-04-13,True,3456.0,Issued - Active
+CRC052599,Take Groundwater,A,262491.0,7,6,irrigation,2005-04-14,23.0,2040-04-13,True,1987.2,Issued - Active
+CRC060388.3,Take Groundwater,A,430000.0,7,6,irrigation,2012-08-31,40.0,2040-12-13,True,3456.0,Issued - Active
+CRC061311,Take Surface Water,A,635621.0,10,4,irrigation,2005-12-08,60.0,2040-12-06,False,4443.43,Issued - Active
+CRC061323.1,Take Groundwater,A,924500.0,7,6,irrigation,2006-12-04,70.0,2040-12-22,True,6048.0,Issued - Active
+CRC063540.1,Take Groundwater,A,714000.0,7,6,water_supply,2009-10-21,55.0,2041-06-13,True,4760.0,Issued - Active
+CRC070965.2,Take Groundwater,A,728156.0,7,6,irrigation,2012-04-12,86.0,2020-03-01,True,7430.43,Issued - Active
+CRC073675,Take Groundwater,A,7000.0,7,6,irrigation,2007-10-09,0.75,2042-10-02,True,27.0,Issued - Active
+CRC081610,Take Groundwater,A,701400.0,7,6,irrigation,2008-10-02,29.0,2043-09-30,True,2505.0,Issued - Active
+CRC082977.1,Take Groundwater,A,380546.0,7,6,irrigation,2010-11-26,40.0,2020-03-10,True,3456.0,Issued - Active
+CRC083249,Take Groundwater,A,231120.0,7,6,irrigation,2014-07-10,25.0,2024-07-10,True,187.26,Issued - Active
+CRC084300,Take Groundwater,A,60000.0,7,6,irrigation,2014-10-07,4.95,2029-10-07,True,427.68,Issued - Active
+CRC084937,Take Groundwater,A,469500.0,7,6,irrigation,2014-07-08,62.0,2024-07-08,True,4772.0,Issued - Active
+CRC085044,Take Groundwater,A,367500.0,7,6,irrigation,2016-09-08,47.0,2026-09-08,True,3715.0,Issued - Inactive
+CRC085073,Take Groundwater,A,316314.0,7,6,irrigation,2015-04-14,24.0,2025-04-14,True,2073.6,Issued - Active
+CRC085084,Take Groundwater,A,1063786.0,7,6,irrigation,2014-08-15,120.0,2024-08-15,True,10368.0,Issued - Active
+CRC091935,Take Groundwater,A,502320.0,7,6,irrigation,2015-05-14,40.0,2025-05-14,True,3456.0,Issued - Active
+CRC093161.1,Take Surface Water,B,1729572.0,7,6,irrigation,2010-06-16,270.0,2019-08-24,False,23069.86,Issued - Active
+CRC101865,Take Surface Water,B,468000.0,7,6,irrigation,2010-04-06,40.0,2033-08-12,False,3456.0,Issued - Active
+CRC101910.3,Take Groundwater,A,612687.0,7,6,irrigation,2011-06-23,78.0,2020-03-10,True,6739.2,Issued - Active
+CRC110404,Take Surface Water,A,203695.0,7,6,water_supply,2012-02-24,30.0,2047-02-24,False,942.0,Issued - Active
+CRC110406,Take Surface Water,A,270000.0,7,6,other,2012-02-24,40.0,2047-02-24,False,3456.0,Issued - Inactive
+CRC110834.1,Take Groundwater,A,165370.0,7,6,irrigation,2012-07-04,19.8,2039-03-05,True,1710.72,Issued - Active
+CRC121134,Take Groundwater,A,710428.0,7,6,irrigation,2013-06-07,50.0,2023-06-07,True,4320.0,Issued - Active
+CRC130459,Take Groundwater,A,158168.0,7,6,irrigation,2012-09-28,7.0,2022-09-28,True,605.0,Issued - Active
+CRC130723,Take Groundwater,A,1987545.0,7,6,irrigation,2013-10-02,150.0,2022-04-12,True,12780.0,Issued - Active
+CRC131813,Take Groundwater,A,749033.5,7,6,industrial,2013-01-30,60.0,2038-05-30,True,2091.57,Issued - Active
+CRC133965,Take Surface Water,A,66225600.0,7,6,stockwater,2013-03-04,2100.0,2039-05-28,False,181440.0,Issued - Active
+CRC136234,Take Surface Water,A,211680000.0,7,6,irrigation,2013-05-27,1000.0,2031-11-18,False,86400.0,Issued - Active
+CRC137029,Take Groundwater,A,2289986.0,7,6,irrigation,2013-08-07,207.0,2023-08-07,True,17884.8,Issued - Active
+CRC140034,Take Groundwater,A,1150090.0,7,6,irrigation,2013-07-10,91.0,2023-07-10,True,7516.4,Issued - Active
+CRC140055,Take Groundwater,A,62563.0,7,6,stockwater,2014-04-24,10.0,2024-04-24,True,184.4,Issued - Active
+CRC141422,Take Groundwater,A,317800.0,7,6,irrigation,2014-04-10,20.0,2024-04-10,True,1728.0,Issued - Inactive
+CRC141448,Take Groundwater,A,676500.0,7,6,irrigation,2013-10-23,67.38,2038-12-24,True,5821.63,Issued - Active
+CRC142181,Take Groundwater,A,121103.0,7,6,irrigation,2013-12-17,9.0,2023-12-17,True,778.0,Issued - Active
+CRC142866,Take Groundwater,A,19322.0,7,6,irrigation,2013-09-10,5.0,2031-08-21,True,126.0,Issued - Active
+CRC142947,Take Groundwater,A,457920.0,7,6,irrigation,2014-01-14,100.0,2023-12-01,True,8640.0,Issued - Active
+CRC143253,Take Groundwater,A,435000.0,7,6,irrigation,2013-12-09,30.0,2025-01-01,True,2592.0,Issued - Active
+CRC144265,Take Groundwater,A,19000.0,7,6,irrigation,2019-03-07,5.0,2029-03-07,True,95.0,Issued - Inactive
+CRC144704,Take Groundwater,A,216406.0,7,6,irrigation,2014-07-11,21.0,2024-07-11,True,1814.43,Issued - Active
+CRC144773,Take Groundwater,A,220752.0,7,6,water_supply,2015-12-14,7.0,2050-12-14,True,864.0,Issued - Active
+CRC145654,Take Groundwater,A,31500.0,7,6,irrigation,2013-12-05,14.0,2023-08-02,True,345.57,Issued - Active
+CRC145672,Take Groundwater,A,334400.0,7,6,irrigation,2014-05-07,26.5,2024-07-16,True,2099.0,Issued - Active
+CRC146632,Take Groundwater,A,432432.0,7,6,irrigation,2014-07-10,35.0,2028-02-13,True,3024.0,Issued - Active
+CRC147101,Take Groundwater,A,2268100.0,7,6,irrigation,2014-06-27,128.0,2024-06-27,True,11059.2,Issued - Active
+CRC147496,Take Groundwater,A,584100.0,7,6,irrigation,2014-11-06,50.0,2024-11-06,True,3974.43,Issued - Active
+CRC147547,Take Groundwater,A,245940.0,7,6,irrigation,2014-07-22,20.0,2025-01-01,True,1656.0,Issued - Active
+CRC150518,Take Groundwater,A,62807.0,7,6,irrigation,2014-09-04,11.0,2029-09-04,True,554.4,Issued - Active
+CRC150643,Take Groundwater,A,392589.0,7,6,irrigation,2014-07-23,107.0,2037-12-11,True,9244.8,Issued - Active
+CRC151242,Take Groundwater,A,255960.0,7,6,irrigation,2014-07-18,32.0,2038-09-05,True,2765.0,Issued - Active
+CRC152387,Take Groundwater,A,669526.0,7,6,irrigation,2014-10-17,53.0,2024-08-04,True,4579.2,Issued - Active
+CRC152927,Take Surface Water,A,9596133.0,7,6,irrigation,2016-04-08,1609.0,2033-12-09,False,139017.6,Issued - Active
+CRC153992,Take Groundwater,A,314280.0,7,6,irrigation,2014-12-22,25.0,2024-12-22,True,2160.0,Issued - Active
+CRC154056,Take Groundwater,A,154140.0,7,6,irrigation,2015-01-16,20.0,2025-01-16,True,1728.0,Issued - Active
+CRC155932,Take Surface Water,AA,73950.0,7,6,water_supply,2015-08-28,10.0,2028-11-05,False,864.0,Issued - Active
+CRC155937,Take Surface Water,A,46357920.0,7,6,irrigation,2015-08-28,1470.0,2028-11-05,False,127008.0,Issued - Active
+CRC155937,Take Surface Water,AA,46357920.0,7,6,water_supply,2015-08-28,1470.0,2028-11-05,False,127008.0,Issued - Active
+CRC155937,Take Surface Water,B,46357920.0,7,6,water_supply,2015-08-28,1470.0,2028-11-05,False,127008.0,Issued - Active
+CRC156238,Take Surface Water,A,195389.0,10,4,irrigation,2015-03-31,170.0,2034-04-22,False,1958.4,Issued - Active
+CRC156734,Take Surface Water,A,364758.0,7,6,irrigation,2015-04-07,40.0,2038-06-24,False,3312.0,Issued - Active
+CRC156736,Take Surface Water,B,1507500.0,7,6,irrigation,2015-04-07,440.0,2033-08-12,False,28800.0,Issued - Active
+CRC156854,Take Groundwater,A,119059.0,7,6,irrigation,2015-11-10,6.5,2029-10-29,True,561.6,Issued - Active
+CRC156878,Take Groundwater,A,232800.0,7,6,irrigation,2015-04-23,26.0,2040-07-05,True,2246.43,Issued - Active
+CRC157134,Take Groundwater,A,345644.0,7,6,irrigation,2015-04-28,30.0,2032-07-01,True,2019.6,Issued - Active
+CRC157457,Take Groundwater,A,1060000.0,7,6,irrigation,2015-07-02,122.7,2020-08-02,True,10600.0,Issued - Active
+CRC158041,Take Groundwater,A,505878.0,7,6,irrigation,2015-06-25,57.5,2038-05-13,True,4968.0,Issued - Active
+CRC158052,Take Groundwater,A,448360.0,7,6,irrigation,2015-06-25,42.0,2038-09-03,True,3629.0,Issued - Active
+CRC158107,Take Groundwater,A,85904.0,7,6,stockwater,2015-07-17,12.0,2025-07-17,True,1036.8,Issued - Active
+CRC160826,Take Surface Water,A,687292.0,10,4,irrigation,2015-08-06,280.0,2034-04-22,False,12096.0,Issued - Active
+CRC161631,Take Groundwater,A,102359.0,7,6,irrigation,2015-09-03,12.0,2030-11-29,True,821.0,Issued - Active
+CRC161732,Take Groundwater,A,142538.0,7,6,irrigation,2015-09-06,15.0,2035-08-31,True,864.0,Issued - Active
+CRC162515,Take Groundwater,A,2302627.0,7,6,irrigation,2015-11-10,390.0,2030-11-10,True,33696.0,Issued - Active
+CRC163175,Take Groundwater,A,407400.0,7,6,irrigation,2015-11-26,48.0,2039-04-29,True,1382.4,Issued - Active
+CRC163200,Take Groundwater,A,59167.5,7,6,stockwater,2015-10-19,4.9,2025-03-06,True,194.4,Issued - Active
+CRC165555,Take Groundwater,A,784134.0,7,6,irrigation,2017-01-17,147.0,2028-11-25,True,12700.8,Issued - Active
+CRC166046,Take Groundwater,A,107334.0,7,6,irrigation,2016-09-07,33.8,2032-07-01,True,1042.86,Issued - Inactive
+CRC166270,Take Groundwater,A,163800.0,7,6,industrial,2016-03-17,10.0,2031-03-17,True,450.0,Issued - Active
+CRC166677,Take Surface Water,A,135561592.0,7,6,irrigation,2016-04-08,11041.0,2031-11-18,False,953942.4,Issued - Active
+CRC167628,Take Groundwater,A,86883.0,7,6,irrigation,2016-04-08,9.5,2038-03-26,True,514.0,Issued - Active
+CRC167773,Take Groundwater,A,54750.0,7,6,stockwater,2016-05-23,10.0,2031-05-23,True,150.0,Issued - Inactive
+CRC168059,Take Groundwater,A,469650.0,7,6,irrigation,2016-04-18,54.0,2030-12-18,True,4276.83,Issued - Active
+CRC169453,Take Groundwater,A,866020.0,7,6,irrigation,2016-06-29,198.73,2034-03-23,True,11578.0,Issued - Active
+CRC169510,Take Groundwater,A,965000.0,7,6,water_supply,2016-09-29,61.3,2050-11-05,True,5296.32,Issued - Active
+CRC170034,Take Groundwater,A,1003248.0,7,6,irrigation,2016-07-27,85.0,2035-03-01,True,7344.0,Issued - Active
+CRC170076,Take Groundwater,A,1551000.0,7,6,irrigation,2016-06-27,32.0,2024-07-15,True,2764.8,Issued - Active
+CRC170429,Take Groundwater,A,109500.0,7,6,industrial,2016-10-27,15.0,2031-10-27,True,350.0,Issued - Active
+CRC172004,Take Groundwater,A,221053.0,7,6,stockwater,2016-10-04,53.879999999999995,2031-12-11,True,2794.43,Issued - Inactive
+CRC172240,Take Groundwater,A,854285.0,7,6,irrigation,2016-12-05,88.0,2023-12-13,True,7603.2,Issued - Active
+CRC172241,Take Groundwater,A,68715.0,7,6,stockwater,2016-12-05,7.0,2023-12-13,True,249.0,Issued - Active
+CRC172416,Take Groundwater,A,426400.0,7,6,irrigation,2016-10-21,139.9,2031-10-21,True,12087.36,Issued - Active
+CRC172640,Take Groundwater,A,65000.0,7,6,irrigation,2016-10-12,10.0,2030-12-13,True,684.0,Issued - Active
+CRC172663,Take Surface Water,A,2284976.0,7,6,irrigation,2016-11-17,91.0,2033-12-09,False,7862.4,Issued - Active
+CRC172811,Take Surface Water,A,2340000.0,7,6,irrigation,2016-10-20,180.0,2036-11-01,False,15552.0,Issued - Active
+CRC172863,Take Groundwater,A,1555200.0,7,6,irrigation,2016-11-17,162.5,2023-10-25,True,8683.2,Issued - Active
+CRC172924,Take Surface Water,A,42374886.0,7,6,irrigation,2016-12-13,2120.0,2031-11-18,False,183168.0,Issued - Active
+CRC172924,Take Surface Water,B,42374886.0,7,6,irrigation,2016-12-13,2120.0,2031-11-18,False,183168.0,Issued - Active
+CRC173111,Take Surface Water,A,147784.0,7,6,irrigation,2016-12-13,16.5,2031-12-13,False,1425.6,Issued - Inactive
+CRC173378,Take Surface Water,B,691850.0,7,6,stockwater,2016-12-16,85.0,2031-12-16,False,7344.0,Issued - Active
+CRC173677,Take Groundwater,A,11750.0,7,6,irrigation,2017-03-27,1.0,2032-03-27,True,42.0,Issued - Active
+CRC173744,Take Surface Water,A,1495000.0,7,6,irrigation,2016-12-09,90.0,2034-03-04,False,7776.0,Issued - Active
+CRC173807,Take Groundwater,A,106200.0,7,6,irrigation,2017-02-17,18.5,2032-02-17,True,1598.4,Issued - Inactive
+CRC173829,Take Groundwater,A,473840.0,7,6,irrigation,2017-03-02,30.0,2024-02-07,True,2592.0,Issued - Active
+CRC174185,Take Groundwater,A,1575500.0,7,6,irrigation,2017-02-17,180.0,2032-02-17,True,15552.0,Issued - Active
+CRC175118,Take Surface Water,B,756864000.0,7,6,irrigation,2017-06-15,24000.0,2047-07-25,False,2073600.0,Issued - Active
+CRC175976,Take Groundwater,A,130000.0,7,6,irrigation,2017-05-15,14.0,2032-12-23,True,1108.77,Issued - Active
+CRC176065,Take Groundwater,A,208000.0,7,6,irrigation,2017-05-19,21.0,2031-11-23,True,1814.4,Issued - Active
+CRC176085,Take Groundwater,A,533000.0,7,6,irrigation,2017-05-23,51.0,2039-02-27,True,4406.0,Issued - Active
+CRC176221,Take Groundwater,A,247000.0,7,6,irrigation,2017-05-29,20.0,2029-04-27,True,1656.0,Issued - Active
+CRC176313,Take Groundwater,A,213892.0,7,6,irrigation,2017-05-12,22.0,2024-05-06,True,1900.8,Issued - Active
+CRC176521,Take Surface Water,A,526435.0,7,6,irrigation,2017-06-16,49.0,2033-12-09,False,4233.6,Issued - Active
+CRC180215,Take Surface Water,A,617945.0,7,6,industrial,2017-07-11,19.6,2034-02-09,False,1693.0,Issued - Active
+CRC180669,Take Groundwater,A,1053579.0,7,6,irrigation,2017-10-19,160.0,2032-10-19,True,3988.91,Terminated - Replaced
+CRC180978,Take Surface Water,A,13824.0,7,6,other,2017-09-13,160.0,2019-09-13,False,1974.86,Issued - Active
+CRC181513,Take Groundwater,A,157088.0,7,6,irrigation,2017-10-11,34.0,2032-10-11,True,777.57,Issued - Active
+CRC181524,Take Groundwater,A,1932726.0,7,6,irrigation,2018-04-06,185.0,2024-01-15,True,150.0,Issued - Active
+CRC181635,Take Groundwater,A,845152.0,7,6,irrigation,2017-10-19,150.0,2032-10-19,True,9504.0,Issued - Active
+CRC181757,Take Groundwater,A,1053579.0,7,6,irrigation,2017-10-19,160.0,2032-10-19,True,3908.27,Issued - Active
+CRC181791,Take Surface Water,A,21284.0,7,6,irrigation,2017-09-26,23.0,2034-03-25,False,118.29,Issued - Active
+CRC182085,Take Groundwater,A,1086471.0,7,6,irrigation,2018-05-23,114.89999999999999,2033-05-23,True,9927.36,Issued - Active
+CRC182092,Take Groundwater,A,4990282.0,7,6,irrigation,2018-03-14,385.0,2033-03-14,True,4360.07,Issued - Active
+CRC182390,Take Groundwater,A,161984.0,7,6,irrigation,2018-01-31,90.0,2033-01-31,True,7776.0,Issued - Active
+CRC182484,Take Groundwater,A,18080.0,7,6,irrigation,2017-11-09,3.0,2029-04-22,True,85.29,Issued - Active
+CRC182545,Take Groundwater,A,178507.0,7,6,irrigation,2017-11-16,20.0,2023-12-18,True,1728.0,Issued - Active
+CRC182594,Take Surface Water,A,241051.0,7,6,irrigation,2018-01-16,20.0,2033-01-16,False,1728.0,Issued - Inactive
+CRC182725,Take Groundwater,A,1032000.0,7,6,irrigation,2018-02-01,125.0,2033-02-01,True,10800.0,Issued - Active
+CRC182780,Take Groundwater,A,640583.0,7,6,irrigation,2017-11-30,100.0,2039-11-26,True,8523.29,Issued - Active
+CRC182809,Take Groundwater,A,2123166.0,7,6,irrigation,2018-03-22,187.99,2033-03-22,True,8121.6,Issued - Active
+CRC182995,Take Groundwater,A,649350.0,7,6,irrigation,2018-03-20,65.0,2033-03-20,True,81168.75,Issued - Inactive
+CRC183143,Take Groundwater,A,800000.0,7,6,water_supply,2018-07-06,30.0,2053-07-06,True,2332.8,Issued - Active
+CRC183203,Take Groundwater,A,219100.0,7,6,industrial,2018-03-07,108.0,2021-12-31,True,700.0,Issued - Active
+CRC183253,Take Groundwater,A,909096.0,7,6,irrigation,2018-01-08,160.0,2039-03-18,True,13824.0,Issued - Active
+CRC183360,Take Groundwater,A,813179.0,7,6,irrigation,2018-07-24,108.0,2033-07-24,True,9331.2,Issued - Active
+CRC183389,Take Groundwater,A,25920.0,7,6,irrigation,2018-02-28,4.9,2032-09-11,True,423.5,Issued - Active
+CRC183482,Take Groundwater,A,16906.0,7,6,irrigation,2018-12-21,9.3,2030-08-02,True,76.23,Issued - Active
+CRC183483,Take Groundwater,A,31240.0,7,6,irrigation,2018-12-21,11.3,2030-08-02,True,184.29,Issued - Active
+CRC184109,Take Surface Water,B,1355625.0,7,6,irrigation,2018-03-05,187.0,2019-11-27,False,16156.8,Issued - Active
+CRC184110,Take Surface Water,A,769600.0,7,6,irrigation,2018-03-05,109.0,2033-08-12,False,8341.0,Issued - Active
+CRC184110,Take Surface Water,B,769600.0,7,6,irrigation,2018-03-05,109.0,2033-08-12,False,8341.0,Issued - Active
+CRC185204,Take Groundwater,A,445119.0,7,6,irrigation,2018-05-04,40.0,2039-09-16,True,3312.0,Issued - Active
+CRC185544,Take Groundwater,A,34690.0,7,6,stockwater,2018-07-30,4.0,2033-07-30,True,205.0,Issued - Active
+CRC185695,Take Groundwater,A,993233.0,7,6,irrigation,2018-08-02,118.0,2020-03-10,True,10195.2,Terminated - Replaced
+CRC185710,Take Groundwater,A,218048.0,7,6,irrigation,2018-07-12,210.0,2031-04-10,True,18144.0,Terminated - Replaced
+CRC185810,Take Groundwater,A,1617370.0,7,6,irrigation,2018-06-07,106.9,2032-03-26,True,9236.16,Issued - Active
+CRC185956,Take Groundwater,A,54600.0,7,6,industrial,2018-06-06,4.2,2029-10-19,True,150.0,Issued - Active
+CRC186036,Take Groundwater,A,1719861.0,7,6,irrigation,2018-06-14,170.0,2020-05-17,True,14688.0,Issued - Active
+CRC186088,Take Groundwater,A,1271627.7,7,6,irrigation,2018-07-13,150.0,2031-04-10,True,9092.27,Issued - Active
+CRC190187,Take Groundwater,A,198650.0,7,6,irrigation,2018-06-22,22.7,2032-07-01,True,478.14,Issued - Active
+CRC190242,Take Groundwater,A,36400.0,7,6,stockwater,2018-07-12,1.16,2032-06-19,True,100.0,Issued - Active
+CRC190346,Take Groundwater,A,141893.0,7,6,irrigation,2018-07-13,22.7,2032-06-19,True,982.0,Issued - Active
+CRC190426,Take Groundwater,A,618909.7,7,6,irrigation,2018-08-02,118.0,2033-08-02,True,6621.55,Issued - Active
+CRC190427,Take Groundwater,A,275000.0,7,6,irrigation,2018-08-02,60.0,2033-08-02,True,5184.0,Issued - Active
+CRC190980,Take Surface Water,A,189795.0,7,6,irrigation,2018-08-10,20.0,2035-06-29,False,1728.0,Issued - Active
+CRC191331,Take Groundwater,A,73654978.0,7,6,water_supply,2018-10-30,6798.330000000003,2033-09-30,True,587374.41,Issued - Active
+CRC192037,Take Groundwater,A,47128.0,7,6,irrigation,2018-10-15,4.99,2034-09-08,True,360.0,Issued - Active
+CRC192491,Take Groundwater,A,45000.0,7,6,irrigation,2018-12-20,9.0,2025-06-26,True,355.52,Issued - Active
+CRC192637,Take Surface Water,B,30888.0,10,4,irrigation,2018-12-03,6.5,2019-11-10,False,562.0,Issued - Active
+CRC192754,Take Surface Water,A,44165.0,7,6,water_supply,2018-12-10,1.4,2034-05-14,False,121.0,Issued - Active
+CRC193408,Take Groundwater,A,29908.0,7,6,irrigation,2019-02-04,3.0,2034-07-22,True,216.0,Issued - Active
+CRC193928,Take Groundwater,A,25427.0,7,6,irrigation,2019-03-11,4.0,2040-03-11,True,173.0,Issued - Active
+CRC870028,Take Surface Water,A,63145.0,7,6,water_supply,1998-02-18,2.0,2033-02-12,False,173.0,Issued - Active
+CRC870029,Take Surface Water,A,9490.0,7,6,water_supply,1998-02-18,0.3,2033-02-12,False,26.0,Issued - Active
+CRC940033A.3,Take Surface Water,A,23725.0,7,6,water_supply,2008-03-13,0.75,2028-09-30,False,65.0,Issued - Active
+CRC940119,Take Groundwater,A,97195.0,7,6,irrigation,1993-12-10,30.0,2028-12-01,True,648.0,Issued - Active
+CRC940120.2,Take Groundwater,A,388779.0,7,6,irrigation,2008-12-02,30.0,2028-12-01,True,2592.0,Issued - Active
+CRC940495,Take Groundwater,A,7719.0,7,6,water_supply,1993-11-26,2.6,2028-11-17,True,28.14,Issued - Active
+CRC940911,Take Groundwater,A,10920.0,7,6,stockwater,1994-05-19,2.0,2029-05-18,True,30.0,Issued - Active
+CRC941321,Take Surface Water,A,9125.0,7,6,other,1994-07-11,1.5,2029-07-06,False,25.0,Issued - Active
+CRC960441,Take Groundwater,A,71269.0,7,6,irrigation,1995-09-29,5.0,2030-09-29,True,414.0,Issued - Active
+CRC962243,Take Groundwater,A,117819.0,7,6,irrigation,1996-06-28,7.6,2031-06-26,True,657.0,Issued - Active
+CRC970483,Take Groundwater,A,64020.0,7,6,irrigation,1997-09-12,20.0,2032-07-01,True,370.29,Issued - Active
+CRC970520.2,Take Groundwater,A,23238.0,7,6,irrigation,2008-08-06,6.9,2032-07-01,True,127.71,Issued - Active
+CRC970527,Take Groundwater,A,100752.0,7,6,irrigation,1997-09-12,7.5,2032-07-01,True,594.0,Issued - Active
+CRC970776,Take Groundwater,A,245940.0,7,6,irrigation,1996-10-21,17.0,2031-10-16,True,1408.0,Issued - Active
+CRC970849,Take Groundwater,A,160049.0,7,6,irrigation,1997-12-09,33.599999999999994,2032-07-01,True,2540.14,Issued - Active
+CRC970974,Take Groundwater,A,176054.0,7,6,irrigation,1997-12-24,40.0,2032-07-01,True,72.0,Issued - Active
+CRC971075,Take Groundwater,A,141383.0,7,6,irrigation,1997-12-24,90.0,2032-07-01,True,7776.0,Issued - Active
+CRC971107,Take Groundwater,A,43616.0,7,6,irrigation,1997-12-09,11.3,2032-07-01,True,244.0,Issued - Active
+CRC971160,Take Groundwater,A,208882.0,7,6,irrigation,1998-03-17,20.9,2032-07-01,True,1580.0,Issued - Active
+CRC971290.1,Take Groundwater,A,15317.0,7,6,irrigation,2003-05-20,4.7,2032-07-01,True,83.7,Issued - Active
+CRC971333.2,Take Groundwater,A,661752.0,7,6,industrial,2008-05-29,50.5,2032-07-01,True,1818.0,Issued - Active
+CRC971360.1,Take Groundwater,A,28379.0,7,6,irrigation,1999-03-18,12.6,2032-01-15,True,189.0,Issued - Active
+CRC971603.1,Take Groundwater,A,14954.0,7,6,irrigation,2007-11-22,4.5,2032-07-01,True,97.14,Issued - Active
+CRC971613.4,Take Groundwater,A,7269.0,7,6,irrigation,2007-06-18,7.0,2032-07-01,True,28.81,Issued - Active
+CRC971667.1,Take Groundwater,A,22902.0,7,6,irrigation,2002-01-21,3.8,2032-07-01,True,127.67,Issued - Active
+CRC971942,Take Groundwater,A,47128.0,7,6,irrigation,1997-09-12,12.0,2032-07-01,True,259.14,Issued - Active
+CRC971972,Take Groundwater,A,589636.0,7,6,irrigation,1997-10-14,62.400000000000006,2032-07-01,True,5391.36,Issued - Active
+CRC972229.1,Take Groundwater,A,100812.0,7,6,irrigation,2009-07-10,19.0,2032-07-01,True,586.29,Issued - Active
+CRC972759.1,Take Groundwater,A,36641.0,7,6,water_supply,1999-06-08,9.0,2032-11-19,True,329.14,Issued - Active
+CRC980272.1,Take Groundwater,A,14954.0,7,6,irrigation,2003-02-18,6.8,2032-09-24,True,112.14,Issued - Active
+CRC981333.7,Take Surface Water,A,380928.0,7,6,irrigation,2012-06-05,40.0,2033-04-01,False,3456.0,Issued - Active
+CRC981363.2,Take Surface Water,A,313270.0,10,4,irrigation,2007-11-22,34.0,2033-04-09,False,2938.0,Issued - Active
+CRC981509.1,Take Groundwater,A,6397.0,7,6,water_supply,2010-12-21,0.6,2033-04-15,True,52.0,Issued - Active
+CRC981719,Take Groundwater,A,115754.0,7,6,irrigation,1998-06-15,10.0,2033-06-10,True,709.71,Issued - Active
+CRC990391,Take Surface Water,A,78840.0,7,6,water_supply,1998-10-09,2.5,2033-10-07,False,216.0,Issued - Active
+CRC990424.1,Take Groundwater,A,324559.0,7,6,irrigation,2007-09-03,25.0,2033-10-21,True,2160.0,Issued - Active
+CRC990473,Take Surface Water,A,101177.0,7,6,irrigation,1998-12-05,10.6,2033-12-03,False,610.6,Issued - Active
+CRC990579.3,Take Surface Water,A,1484574.0,7,6,irrigation,2014-02-12,178.2,2034-03-16,False,15396.48,Issued - Active
+CRC990698.1,Take Surface Water,A,249268.0,10,4,irrigation,2008-05-13,23.0,2033-12-03,False,1703.33,Issued - Active
+CRC990770,Take Groundwater,A,94276.0,7,6,industrial,1999-09-20,8.0,2034-09-17,True,259.0,Issued - Active
+CRC990771,Take Groundwater,A,262080.0,7,6,industrial,1999-09-20,20.0,2034-09-17,True,514.29,Issued - Active
+CRC990926.1,Take Groundwater,A,298050.0,7,6,water_supply,2008-05-16,23.0,2034-08-04,True,1987.2,Issued - Active
+CRC990927,Take Groundwater,A,239258.0,7,6,water_supply,2006-04-04,11.0,2041-03-31,True,950.0,Issued - Active
+CRC990931.1,Take Surface Water,A,777600.0,7,6,water_supply,2008-05-13,60.0,2036-05-18,False,5184.0,Issued - Active
+CRC990958.1,Take Surface Water,A,449886.0,7,6,irrigation,2007-03-21,35.0,2031-01-24,False,3024.0,Issued - Active
+CRC991053,Take Surface Water,A,435080.0,7,6,water_supply,1998-12-24,13.8,2033-12-23,False,1192.0,Issued - Active
+CRC991057,Take Surface Water,A,73000.0,7,6,water_supply,1999-08-12,11.0,2034-02-09,False,200.0,Issued - Active
+CRC991058,Take Surface Water,AA,136050.0,7,6,water_supply,2015-08-28,10.5,2035-08-28,False,907.0,Issued - Inactive
+CRC991363,Take Surface Water,A,5675.75,7,6,water_supply,1999-03-01,0.18,2034-02-25,False,15.55,Issued - Active
+CRC991423,Take Groundwater,A,819000.0,7,6,water_supply,2004-09-09,63.17999999999999,2039-09-08,True,5458.75,Issued - Active
+CRC991592,Take Surface Water,A,31536.000000000004,7,6,water_supply,1999-02-22,1.0,2034-02-18,False,86.4,Issued - Active
+CRC991616,Take Groundwater,A,271963.0,7,6,irrigation,1999-05-24,19.0,2034-05-20,True,1641.6,Issued - Active
+CRC991691,Take Groundwater,A,12278.0,7,6,irrigation,1999-03-18,2.5,2034-03-15,True,108.0,Issued - Active
+CRC991826,Take Surface Water,A,92230.0,10,4,irrigation,1999-05-07,30.0,2034-05-04,False,555.43,Issued - Active
