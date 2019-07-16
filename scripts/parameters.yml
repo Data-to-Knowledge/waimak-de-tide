@@ -1,0 +1,11 @@
+Input:
+    server: SQL2012PROD05
+    database: Hydrotel
+    mtype: flow
+    site: '66401'
+    quantile: 0.3
+    ref_point: 2355
+    new_mtype: 'Flow Detided v2'
+    new_point: 7229
+Output:
+    server: SQL2012dev01
