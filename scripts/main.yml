@@ -8,3 +8,4 @@ dependencies:
 - pyhydrotel
 - detidelevel
 - pyyaml
+- pandas=0.24
