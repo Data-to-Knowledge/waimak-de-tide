@@ -8,7 +8,6 @@ import pandas as pd
 from pyhydrotel import get_ts_data, get_sites_mtypes
 from pdsql import mssql
 import detidelevel as dtl
-import parameters as param
 
 pd.options.display.max_columns = 10
 
@@ -16,8 +15,8 @@ pd.options.display.max_columns = 10
 ### Parameters
 
 output_path = r'E:\ecan\shared\projects\de-tide\de-tide_2019-07-04.html'
-from_date = '2019-06-15'
-to_date = '2019-07-15 16:00'
+from_date = '2019-07-01'
+to_date = '2019-07-14 19:00'
 
 ######################################
 ### Determine last saved values
@@ -26,11 +25,11 @@ to_date = '2019-07-15 16:00'
 ######################################
 ### Get data
 
-tsdata = get_ts_data(param.hydrotel_server, param.hydrotel_database, param.mtype, param.site, from_date, to_date, None)
+tsdata = get_ts_data(param['Input']['server'], param['Input']['database'], param['Input']['mtype'], str(param['Input']['site']), str(from_date), str(to_date), None)
 
 tsdata1 = dtl.util.tsreg(tsdata.unstack(1).reset_index().drop(['ExtSiteID'], axis=1).set_index('DateTime')).interpolate('time')
 
-roll1 = tsdata1[[param.mtype]].rolling(12, center=True).mean().dropna()
+roll1 = tsdata1[[param['Input']['mtype']]].rolling(12, center=True).mean().dropna()
 roll1.columns = ['smoothed original']
 
 ######################################
@@ -38,7 +37,7 @@ roll1.columns = ['smoothed original']
 
 #det1 = dtl.detide(roll1, float(param.quantile))
 
-det2 = dtl.plot.plot_detide(roll1, float(param.quantile), output_path=output_path)
+det2 = dtl.plot.plot_detide(roll1, float(param['Input']['quantile']), output_path=output_path)
 
 
 
