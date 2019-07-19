@@ -5,7 +5,7 @@ Created on Sun Sep 30 12:33:58 2018
 @author: michaelek
 """
 import pandas as pd
-from pyhydrotel import get_ts_data, get_sites_mtypes
+from pyhydrotel import get_ts_data, get_sites_mtypes, get_mtypes
 from pdsql import mssql
 import detidelevel as dtl
 
@@ -55,6 +55,29 @@ ts1 = mssql.rd_sql('edwprod01', 'hydro', 'TSDataNumericDaily', ['DateTime', 'Val
 #ts1['DateTime'] = pd.to_datetime(ts1['DateTime'])
 #ts1.set_index('DateTime', inplace=True)
 #ts1.loc['2019-01-01':'2019-01-15'].plot()
+
+server = 'sql2012prod05'
+database = 'hydrotel'
+mtypes = ['Hmax', 'Hs', 'Tz', 'Dir']
+sites = ['3373011', '3373012']
+
+mtypes1 = get_mtypes(server, database)
+
+sites_mtypes = get_sites_mtypes(server, database, mtypes)
+
+data1 = get_ts_data(server, database, mtypes, sites).reset_index()
+
+data1.groupby(['ExtSiteID', 'MType'])['DateTime'].describe()
+
+
+
+
+
+
+
+
+
+
 
 
 
