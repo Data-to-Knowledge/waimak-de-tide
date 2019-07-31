@@ -30,7 +30,7 @@ try:
     ######################################
     ### Get data
 
-    tsdata = get_ts_data(param['Input']['server'], param['Input']['database'], param['Input']['mtype'], str(param['Input']['site']), str(from_date), str(to_date), None)
+    tsdata = get_ts_data(param['Input']['hydrotel_server'], 'hydrotel', param['Input']['mtype'], str(param['Input']['site']), str(from_date), str(to_date), None)
 
     tsdata1 = dtl.util.tsreg(tsdata.unstack(1).reset_index().drop(['ExtSiteID'], axis=1).set_index('DateTime')).interpolate('time')
 
@@ -47,7 +47,7 @@ try:
     #####################################
     ### Clip data to last value in Hydrotel
 
-    last_val1 = mssql.rd_sql(param['Output']['server'], param['Input']['database'], stmt='select max(DT) from Samples where Point = {point}'.format(point=param['Output']['new_point'])).iloc[0][0]
+    last_val1 = mssql.rd_sql(param['Output']['hydrotel_server'], 'hydrotel', stmt='select max(DT) from Samples where Point = {point}'.format(point=param['Output']['detided_point'])).iloc[0][0]
 
     if isinstance(last_val1, pd.Timestamp):
         det1 = det1[det1.DateTime > last_val1].copy()
@@ -56,12 +56,13 @@ try:
     ### Save to Hydrotel and log result
 
     if not det1.empty:
-        det1['Point'] = param['Output']['new_point']
+        det1['Point'] = param['Output']['detided_point']
         det1['Quality'] = param['Output']['quality_code']
         det1.rename(columns={'DateTime': 'DT', 'de-tided': 'SampleValue'}, inplace=True)
 
-        mssql.to_mssql(det1, param['Output']['server'], param['Input']['database'], 'Samples')
-        util.log(run_time_start, from_date, det1.DT.max(), 'Hydrotel', 'Samples', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(det1), mtype=param['Input']['new_mtype'], point=param['Output']['new_point']))
+        mssql.to_mssql(det1, param['Output']['hydrotel_server'], 'hydrotel', 'Samples')
+
+        util.log(run_time_start, from_date, det1.DT.max(), 'Hydrotel', 'Samples', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(det1), mtype=param['Input']['detided_mtype'], point=param['Output']['detided_point']))
 
     else:
         util.log(run_time_start, to_date, to_date, 'Hydrotel', 'Samples', 'pass', 'No data needed to be added')

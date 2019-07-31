@@ -21,5 +21,6 @@ with open(os.path.join(base_dir, 'parameters.yml')) as param:
         param = yaml.safe_load(param)
 
 
-new_mtype = create_site_mtype(param['Output']['server'], param['Input']['database'], param['Input']['site'], param['Input']['ref_point'], param['Input']['new_mtype'])
+detided_mtype = create_site_mtype(param['Output']['hydrotel_server'], 'hydrotel', param['Input']['site'], param['Input']['ref_point'], param['Input']['detided_mtype'])
 
+unmod_mtype = create_site_mtype(param['Output']['hydrotel_server'], 'hydrotel', param['Input']['site'], param['Input']['ref_point'], param['Input']['unmod_mtype'])
