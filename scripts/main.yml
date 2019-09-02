@@ -9,3 +9,5 @@ dependencies:
 - detidelevel
 - pyyaml
 - pandas=0.24
+- hilltoppy
+- FlowNaturalisation
