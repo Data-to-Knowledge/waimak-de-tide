@@ -1,11 +1,14 @@
 Input:
-    hydrotel_server: SQL2012PROD05
+    hydrotel_server: SQL2012PROD04
     mtype: flow
     site: '66401'
     quantile: 0.3
     ref_point: 2355
     detided_mtype: 'Flow Detided v2'
     unmod_mtype: 'Flow Unmodified'
+    browns_rock_site: '66450'
+    browns_rock_mtype: 'flow'
+    browns_rock_waps: ['L35/0906', 'L35/1090']
     hilltop_base_url: http://wateruse.ecan.govt.nz
     hilltop_hts: WaterUse.hts
     hydro_server: edwprod01
