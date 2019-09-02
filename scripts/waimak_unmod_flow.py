@@ -11,6 +11,7 @@ from hilltoppy.util import convert_site_names
 from pyhydrotel import get_ts_data, get_sites_mtypes
 from flownat import FlowNat
 from pdsql import mssql
+from time import sleep
 import yaml
 import util
 
@@ -33,7 +34,7 @@ else:
 
 from_date = (to_date - pd.DateOffset(days=3)).floor('D')
 
-#from_date = pd.Timestamp('2019-02-01')
+#from_date = pd.Timestamp('2019-07-01 00:30:00')
 #to_date = pd.Timestamp('2019-02-03')
 
 
@@ -66,7 +67,20 @@ try:
 
     mtype_list = []
     for site in ht_sites1.Site:
-        m1 = ws.measurement_list(param['Input']['hilltop_base_url'], param['Input']['hilltop_hts'], site)
+        timer = 10
+        while timer > 0:
+            try:
+                m1 = ws.measurement_list(param['Input']['hilltop_base_url'], param['Input']['hilltop_hts'], site)
+                break
+            except Exception as err:
+                err1 = err
+                timer = timer - 1
+                if timer == 0:
+                    raise ValueError(err1)
+                else:
+                    print(err1)
+                    sleep(3)
+
         mtype_list.append(m1)
     mtypes = pd.concat(mtype_list).reset_index()
 
@@ -75,7 +89,20 @@ try:
 
     tsdata_list = []
     for i, row in mtypes2.iterrows():
-        t1 = ws.get_data(param['Input']['hilltop_base_url'], param['Input']['hilltop_hts'], row['Site'], row['Measurement'], str(from_date), str(row['To']))
+        timer = 10
+        while timer > 0:
+            try:
+                t1 = ws.get_data(param['Input']['hilltop_base_url'], param['Input']['hilltop_hts'], row['Site'], row['Measurement'], str(from_date), str(row['To']))
+                break
+            except Exception as err:
+                err1 = err
+                timer = timer - 1
+                if timer == 0:
+                    raise ValueError(err1)
+                else:
+                    print(err1)
+                    sleep(3)
+
         tsdata_list.append(t1)
     tsdata1 = pd.concat(tsdata_list)
 
