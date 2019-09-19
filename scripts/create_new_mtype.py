@@ -24,3 +24,7 @@ with open(os.path.join(base_dir, 'parameters.yml')) as param:
 detided_mtype = create_site_mtype(param['Output']['hydrotel_server'], 'hydrotel', param['Input']['site'], param['Input']['ref_point'], param['Input']['detided_mtype'])
 
 unmod_mtype = create_site_mtype(param['Output']['hydrotel_server'], 'hydrotel', param['Input']['site'], param['Input']['ref_point'], param['Input']['unmod_mtype'])
+
+other_abstr = create_site_mtype(param['Output']['hydrotel_server'], 'hydrotel', param['Input']['site'], param['Input']['ref_point'], param['Input']['other_mtype'])
+
+
