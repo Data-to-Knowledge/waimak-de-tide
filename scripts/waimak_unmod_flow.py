@@ -130,6 +130,7 @@ try:
     except:
         alt_dates = pd.date_range(from_date, to_date, freq='15T')
         other_ts = pd.Series(0, index=alt_dates, name='other')
+        other_ts.index.name = 'DateTime'
 
     #############################################
     ### Browns Rock data
@@ -160,7 +161,7 @@ try:
         combo2.rename(columns={'DateTime': 'DT'}, inplace=True)
 
         ## Nat flow
-        nat_flow = combo2[['nat_flow']].copy()
+        nat_flow = combo2[['DT', 'nat_flow']].copy()
 
         nat_flow['Point'] = param['Output']['unmod_point']
         nat_flow['Quality'] = param['Output']['quality_code']
@@ -171,7 +172,7 @@ try:
         util.log(run_time_start, from_date, combo2.DT.max(), 'Hydrotel', 'Samples', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(combo2), mtype=param['Input']['unmod_mtype'], point=param['Output']['unmod_point']))
 
         ## Other flow
-        other_flow = combo2[['other']].copy()
+        other_flow = combo2[['DT', 'other']].copy()
 
         other_flow['Point'] = param['Output']['other_point']
         other_flow['Quality'] = param['Output']['quality_code']
@@ -179,7 +180,7 @@ try:
 
         mssql.to_mssql(other_flow, param['Output']['hydrotel_server'], 'hydrotel', 'Samples')
 
-        util.log(run_time_start, from_date, combo2.DT.max(), 'Hydrotel', 'Samples', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(combo2), mtype=param['Input']['unmod_mtype'], point=param['Output']['other_point']))
+        util.log(run_time_start, from_date, combo2.DT.max(), 'Hydrotel', 'Samples', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(combo2), mtype=param['Input']['other_mtype'], point=param['Output']['other_point']))
 
     else:
         util.log(run_time_start, to_date, to_date, 'Hydrotel', 'Samples', 'pass', 'No data needed to be added')
