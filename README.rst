@@ -4,10 +4,10 @@ Remove the tidal effect on the Waimak SH1 water levels
 This git repository contains code necessary to create a flow time series in Hydrotel for lowflow restrictions at the Old Highway Bridge on the mouth of the Waimakariri River.
 
 There are four main procedures:
-  1 Create the appropriate dataset names in Hydrotel (i.e. create the object and point numbers)
-  2 Remove the tides from the monitored flow (detided flow)
-  3 Extract the abstractions and add them back to the detided flow (unmodified flow)
-  4 Assign the unmodified flow Hydrotel name to the appropriate lowflow band(s)
+  1. Create the appropriate dataset names in Hydrotel (i.e. create the object and point numbers)
+  2. Remove the tides from the monitored flow (detided flow)
+  3. Extract the abstractions and add them back to the detided flow (unmodified flow)
+  4. Assign the unmodified flow Hydrotel name to the appropriate lowflow band(s)
 
 Python environment
 ------------------
