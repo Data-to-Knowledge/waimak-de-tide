@@ -6,6 +6,7 @@ Input:
     ref_point: 2355
     detided_mtype: 'Flow Detided v2'
     unmod_mtype: 'Flow Unmodified'
+    other_mtype: 'Other SW Abstractions'
     browns_rock_site: '66450'
     browns_rock_mtype: 'flow'
     browns_rock_waps: ['L35/0906', 'L35/1090']
@@ -16,6 +17,7 @@ Output:
     hydrotel_server: SQL2012dev01
     detided_point: 7229
     unmod_point: 7231
+    other_point: 7232
     quality_code: 2
     log_server: sql2014dev01
     log_database: Apps_Trace_Log

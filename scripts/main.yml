@@ -8,4 +8,6 @@ dependencies:
 - pyhydrotel
 - detidelevel
 - pyyaml
-- pandas=0.24
+- pandas
+- hilltop-py
+- FlowNaturalisation
