@@ -27,8 +27,8 @@ output_server = 'sql2012dev01'
 
 sites_mtypes = {'66401': ['flow', 'flow detided', 'flow detided + browns rock'], '66450': ['flow']}
 
-from_date = '2019-09-27'
-to_date = '2019-10-08'
+from_date = '2019-10-08'
+to_date = '2019-10-11'
 
 
 ##########################################
