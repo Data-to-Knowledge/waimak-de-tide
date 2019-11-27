@@ -1,5 +1,5 @@
 Input:
-    hydrotel_server: sql2012prod04
+    hydrotel_server: SQL03PROD
     mtype: flow
     site: '66401'
     quantile: 0.3
@@ -14,7 +14,7 @@ Input:
     hilltop_hts: WaterUse.hts
     hydro_server: edwprod01
 Output:
-    hydrotel_server: sql03dev
+    hydrotel_server: SQL03dev
     detided_point: 7229
     unmod_point: 7231
     other_point: 7232
