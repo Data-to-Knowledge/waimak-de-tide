@@ -165,30 +165,40 @@ try:
 
         nat_flow['Point'] = param['Output']['unmod_point']
         nat_flow['Quality'] = param['Output']['quality_code']
+        nat_flow['BypassValidation'] = 0
+        nat_flow['BypassAlarms'] = 0
+        nat_flow['BypassScaling'] = 0
+        nat_flow['BypassTimeOffset'] = 0
+        nat_flow['Priority'] = 3
         nat_flow.rename(columns={'nat_flow': 'SampleValue'}, inplace=True)
 
-        mssql.to_mssql(nat_flow, param['Output']['hydrotel_server'], 'hydrotel', 'Samples')
+        mssql.to_mssql(nat_flow, param['Output']['hydrotel_server'], 'hydrotel', 'SampleBuf')
 
-        util.log(run_time_start, from_date, combo2.DT.max(), 'Hydrotel', 'Samples', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(combo2), mtype=param['Input']['unmod_mtype'], point=param['Output']['unmod_point']))
+        util.log(run_time_start, from_date, combo2.DT.max(), 'Hydrotel', 'SampleBuf', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(combo2), mtype=param['Input']['unmod_mtype'], point=param['Output']['unmod_point']))
 
         ## Other flow
         other_flow = combo2[['DT', 'other']].copy()
 
         other_flow['Point'] = param['Output']['other_point']
         other_flow['Quality'] = param['Output']['quality_code']
+        other_flow['BypassValidation'] = 0
+        other_flow['BypassAlarms'] = 0
+        other_flow['BypassScaling'] = 0
+        other_flow['BypassTimeOffset'] = 0
+        other_flow['Priority'] = 3
         other_flow.rename(columns={'other': 'SampleValue'}, inplace=True)
 
-        mssql.to_mssql(other_flow, param['Output']['hydrotel_server'], 'hydrotel', 'Samples')
+        mssql.to_mssql(other_flow, param['Output']['hydrotel_server'], 'hydrotel', 'SampleBuf')
 
-        util.log(run_time_start, from_date, combo2.DT.max(), 'Hydrotel', 'Samples', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(combo2), mtype=param['Input']['other_mtype'], point=param['Output']['other_point']))
+        util.log(run_time_start, from_date, combo2.DT.max(), 'Hydrotel', 'SampleBuf', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(combo2), mtype=param['Input']['other_mtype'], point=param['Output']['other_point']))
 
     else:
-        util.log(run_time_start, to_date, to_date, 'Hydrotel', 'Samples', 'pass', 'No data needed to be added')
+        util.log(run_time_start, to_date, to_date, 'Hydrotel', 'SampleBuf', 'pass', 'No data needed to be added')
 
 
 except Exception as err:
     err1 = err
     print(err1)
-    util.log(run_time_start, from_date, to_date, 'Hydrotel', 'Samples', 'fail', str(err1))
+    util.log(run_time_start, from_date, to_date, 'Hydrotel', 'SampleBuf', 'fail', str(err1))
 
 

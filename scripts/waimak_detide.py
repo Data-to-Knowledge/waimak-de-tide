@@ -58,19 +58,24 @@ try:
     if not det1.empty:
         det1['Point'] = param['Output']['detided_point']
         det1['Quality'] = param['Output']['quality_code']
+        det1['BypassValidation'] = 0
+        det1['BypassAlarms'] = 0
+        det1['BypassScaling'] = 0
+        det1['BypassTimeOffset'] = 0
+        det1['Priority'] = 3
         det1.rename(columns={'DateTime': 'DT', 'de-tided': 'SampleValue'}, inplace=True)
 
-        mssql.to_mssql(det1, param['Output']['hydrotel_server'], 'hydrotel', 'Samples')
+        mssql.to_mssql(det1, param['Output']['hydrotel_server'], 'hydrotel', 'SampleBuf')
 
-        util.log(run_time_start, from_date, det1.DT.max(), 'Hydrotel', 'Samples', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(det1), mtype=param['Input']['detided_mtype'], point=param['Output']['detided_point']))
+        util.log(run_time_start, from_date, det1.DT.max(), 'Hydrotel', 'SampleBuf', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(det1), mtype=param['Input']['detided_mtype'], point=param['Output']['detided_point']))
 
     else:
-        util.log(run_time_start, to_date, to_date, 'Hydrotel', 'Samples', 'pass', 'No data needed to be added')
+        util.log(run_time_start, to_date, to_date, 'Hydrotel', 'SampleBuf', 'pass', 'No data needed to be added')
 
 
 except Exception as err:
     err1 = err
     print(err1)
-    util.log(run_time_start, from_date, to_date, 'Hydrotel', 'Samples', 'fail', str(err1))
+    util.log(run_time_start, from_date, to_date, 'Hydrotel', 'SampleBuf', 'fail', str(err1))
 
 
