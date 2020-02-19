@@ -60,7 +60,7 @@ try:
         up_takes2['AllocatedRateSum'] = up_takes2.groupby('Wap')['AllocatedRate'].transform('sum')
         up_takes2['AllocatedRateRatio'] = up_takes2['AllocatedRate']/up_takes2['AllocatedRateSum']
 
-        wap_ratios = up_takes2[up_takes2.HydroFeature == 'Surface Water'].groupby('Wap')['AllocatedRateRatio'].sum()
+        wap_ratios = up_takes2[up_takes2.HydroGroup == 'Surface Water'].groupby('Wap')['AllocatedRateRatio'].sum()
         wap_ratios.index.name = 'ExtSiteID'
 
         ####################################
