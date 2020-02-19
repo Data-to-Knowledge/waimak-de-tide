@@ -67,15 +67,20 @@ try:
 
         mssql.to_mssql(det1, param['Output']['hydrotel_server'], 'hydrotel', 'SampleBuf')
 
-        util.log(run_time_start, from_date, det1.DT.max(), 'Hydrotel', 'SampleBuf', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(det1), mtype=param['Input']['detided_mtype'], point=param['Output']['detided_point']))
+        str1 = '{det} data points added to {mtype} (Point {point})'.format(det=len(det1), mtype=param['Input']['detided_mtype'], point=param['Output']['detided_point'])
+
+        print(str1)
+
+#        util.log(run_time_start, from_date, det1.DT.max(), 'Hydrotel', 'SampleBuf', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(det1), mtype=param['Input']['detided_mtype'], point=param['Output']['detided_point']))
 
     else:
-        util.log(run_time_start, to_date, to_date, 'Hydrotel', 'SampleBuf', 'pass', 'No data needed to be added')
+        print('No data needed to be added')
+#        util.log(run_time_start, to_date, to_date, 'Hydrotel', 'SampleBuf', 'pass', 'No data needed to be added')
 
 
 except Exception as err:
     err1 = err
     print(err1)
-    util.log(run_time_start, from_date, to_date, 'Hydrotel', 'SampleBuf', 'fail', str(err1))
+#    util.log(run_time_start, from_date, to_date, 'Hydrotel', 'SampleBuf', 'fail', str(err1))
 
 
