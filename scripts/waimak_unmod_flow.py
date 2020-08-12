@@ -9,7 +9,6 @@ import pandas as pd
 from hilltoppy import web_service as ws
 from hilltoppy.util import convert_site_names
 from pyhydrotel import get_ts_data, get_sites_mtypes
-from flownat import FlowNat
 from pdsql import mssql
 from time import sleep
 import yaml
@@ -34,6 +33,7 @@ else:
 
 from_date = (to_date - pd.DateOffset(days=3)).floor('D')
 
+allo_csv = 'above_66401_allo_2020-08-12.csv'
 #from_date = pd.Timestamp('2019-07-01 00:30:00')
 #to_date = pd.Timestamp('2019-02-03')
 
@@ -52,10 +52,7 @@ try:
 
         #####################################
         ### Determine the Wap usage ratios
-
-        fn1 = FlowNat(from_date=from_date, to_date=to_date, rec_data_code='RAW', input_sites=str(param['Input']['site']))
-
-        up_takes1 = fn1.upstream_takes()
+        up_takes1 = pd.read_csv(os.path.join(base_dir, allo_csv))
         up_takes2 = up_takes1[up_takes1.AllocatedRate > 0].copy()
         up_takes2['AllocatedRateSum'] = up_takes2.groupby('Wap')['AllocatedRate'].transform('sum')
         up_takes2['AllocatedRateRatio'] = up_takes2['AllocatedRate']/up_takes2['AllocatedRateSum']
