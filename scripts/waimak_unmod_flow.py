@@ -9,7 +9,6 @@ import pandas as pd
 from hilltoppy import web_service as ws
 from hilltoppy.util import convert_site_names
 from pyhydrotel import get_ts_data, get_sites_mtypes
-from flownat import FlowNat
 from pdsql import mssql
 from time import sleep
 import yaml
@@ -34,6 +33,7 @@ else:
 
 from_date = (to_date - pd.DateOffset(days=3)).floor('D')
 
+allo_csv = 'above_66401_allo_2020-08-12.csv'
 #from_date = pd.Timestamp('2019-07-01 00:30:00')
 #to_date = pd.Timestamp('2019-02-03')
 
@@ -52,15 +52,12 @@ try:
 
         #####################################
         ### Determine the Wap usage ratios
-
-        fn1 = FlowNat(from_date=from_date, to_date=to_date, rec_data_code='RAW', input_sites=str(param['Input']['site']))
-
-        up_takes1 = fn1.upstream_takes()
+        up_takes1 = pd.read_csv(os.path.join(base_dir, allo_csv))
         up_takes2 = up_takes1[up_takes1.AllocatedRate > 0].copy()
         up_takes2['AllocatedRateSum'] = up_takes2.groupby('Wap')['AllocatedRate'].transform('sum')
         up_takes2['AllocatedRateRatio'] = up_takes2['AllocatedRate']/up_takes2['AllocatedRateSum']
 
-        wap_ratios = up_takes2[up_takes2.HydroFeature == 'Surface Water'].groupby('Wap')['AllocatedRateRatio'].sum()
+        wap_ratios = up_takes2[up_takes2.HydroGroup == 'Surface Water'].groupby('Wap')['AllocatedRateRatio'].sum()
         wap_ratios.index.name = 'ExtSiteID'
 
         ####################################
@@ -127,7 +124,9 @@ try:
         other_ts = tsdata3.ffill().sum(axis=1)/15/60
         other_ts.name = 'other'
 
-    except:
+    except Exception as err:
+        print('*Extraction of water usage data failed')
+        print(err)
         alt_dates = pd.date_range(from_date, to_date, freq='15T')
         other_ts = pd.Series(0, index=alt_dates, name='other')
         other_ts.index.name = 'DateTime'
@@ -165,30 +164,47 @@ try:
 
         nat_flow['Point'] = param['Output']['unmod_point']
         nat_flow['Quality'] = param['Output']['quality_code']
+        nat_flow['BypassValidation'] = 0
+        nat_flow['BypassAlarms'] = 0
+        nat_flow['BypassScaling'] = 0
+        nat_flow['BypassTimeOffset'] = 0
+        nat_flow['Priority'] = 3
         nat_flow.rename(columns={'nat_flow': 'SampleValue'}, inplace=True)
 
-        mssql.to_mssql(nat_flow, param['Output']['hydrotel_server'], 'hydrotel', 'Samples')
+        mssql.to_mssql(nat_flow, param['Output']['hydrotel_server'], 'hydrotel', 'SampleBuf')
 
-        util.log(run_time_start, from_date, combo2.DT.max(), 'Hydrotel', 'Samples', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(combo2), mtype=param['Input']['unmod_mtype'], point=param['Output']['unmod_point']))
+        str1 = '{det} data points added to {mtype} (Point {point})'.format(det=len(combo2), mtype=param['Input']['unmod_mtype'], point=param['Output']['unmod_point'])
+
+        print(str1)
+
+#        util.log(run_time_start, from_date, combo2.DT.max(), 'Hydrotel', 'SampleBuf', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(combo2), mtype=param['Input']['unmod_mtype'], point=param['Output']['unmod_point']))
 
         ## Other flow
         other_flow = combo2[['DT', 'other']].copy()
 
         other_flow['Point'] = param['Output']['other_point']
         other_flow['Quality'] = param['Output']['quality_code']
+        other_flow['BypassValidation'] = 0
+        other_flow['BypassAlarms'] = 0
+        other_flow['BypassScaling'] = 0
+        other_flow['BypassTimeOffset'] = 0
+        other_flow['Priority'] = 3
         other_flow.rename(columns={'other': 'SampleValue'}, inplace=True)
 
-        mssql.to_mssql(other_flow, param['Output']['hydrotel_server'], 'hydrotel', 'Samples')
+        mssql.to_mssql(other_flow, param['Output']['hydrotel_server'], 'hydrotel', 'SampleBuf')
 
-        util.log(run_time_start, from_date, combo2.DT.max(), 'Hydrotel', 'Samples', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(combo2), mtype=param['Input']['other_mtype'], point=param['Output']['other_point']))
+        str1 = '{det} data points added to {mtype} (Point {point})'.format(det=len(combo2), mtype=param['Input']['other_mtype'], point=param['Output']['other_point'])
+
+        print(str1)
+
+#        util.log(run_time_start, from_date, combo2.DT.max(), 'Hydrotel', 'SampleBuf', 'pass', '{det} data points added to {mtype} (Point {point})'.format(det=len(combo2), mtype=param['Input']['other_mtype'], point=param['Output']['other_point']))
 
     else:
-        util.log(run_time_start, to_date, to_date, 'Hydrotel', 'Samples', 'pass', 'No data needed to be added')
+        print('No data needed to be added')
+#        util.log(run_time_start, to_date, to_date, 'Hydrotel', 'SampleBuf', 'pass', 'No data needed to be added')
 
 
 except Exception as err:
     err1 = err
     print(err1)
-    util.log(run_time_start, from_date, to_date, 'Hydrotel', 'Samples', 'fail', str(err1))
-
-
+    util.log(run_time_start, from_date, to_date, 'Hydrotel', 'SampleBuf', 'fail', str(err1))
