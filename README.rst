@@ -22,3 +22,7 @@ The first three procedures are laid out in the below figure:
 Each of these three procedures are represented at three python scripts. The first procedure only needs to be run once per Hydrotel installation. Once the datasets have been created, the appropriate fields need to be populated in the `parameters.yml file <https://github.com/mullenkamp/waimak-de-tide/blob/master/scripts/parameters.yml>`_ (e.g. detided_mtype, unmod_mtype, other_mtype, detided_point, unmod_point, other_point).
 
 Once the parameters.yml is filled, then procedures 2 and 3 are run in sequence daily. These procedures are contained within the waimak_detide.py and waimak_unmod_flow.py files respectively. The main.py file orchestrates the run sequence and the main.bat file runs the main.py in the appropriate python environment for Windows OS.
+
+Update 2020-10-01
+-------------------
+The FlowNaturalisation dependencies have been removed. Procedure 3 now uses a static dataset of consents and WAPs to determine who is above OHB. This was done to reduce the likelihood of failures do to several dependencies. This dataset should be updated once a year to ensure new consents are captured and old consents are removed.
