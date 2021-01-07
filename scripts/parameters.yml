@@ -15,9 +15,9 @@ Input:
     hydro_server: edwprod01
 Output:
     hydrotel_server: SQL03dev
-    detided_point: 7354
-    unmod_point: 7355
-    other_point: 7356
+    detided_point: 7435
+    unmod_point: 7436
+    other_point: 7437
     quality_code: 2
     log_server: sql04dev
     log_database: Apps_Trace_Log
